@@ -1,0 +1,12 @@
+{
+    "caption": "Go to date",
+    "fields": {
+        "ABM": {
+            "caption": "date",
+            "editor": "DynamicValue",
+            "name": "date",
+            "rank": 0,
+            "value": "date"
+        }
+    }
+}

@@ -1,0 +1,231 @@
+{
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 200,
+        "width": 400
+    },
+    "display": "Cal",
+    "events": {
+        "AAZ": {
+            "caption": "a timeframe has been selected",
+            "name": "timeframeselected"
+        },
+        "AAb": {
+            "caption": "a date has been clicked",
+            "name": "a_date_has_been_clicked"
+        },
+        "AAk": {
+            "caption": "a calendar is revealed",
+            "name": "a_calendar_is_revealed"
+        }
+    },
+    "fields": {
+        "AAK": {
+            "caption": "🄳🄰🅃🄴 🄲🄻🄸🄲🄺🄸🄽🄶 & 🅂🄴🄻🄴🄲🅃🄸🄽🄶",
+            "editor": "Label",
+            "name": "🄳🄰🅃🄴_🄲🄻🄸🄲🄺🄸🄽🄶_&_🅂🄴🄻🄴🄲🅃🄸🄽🄶",
+            "rank": 0
+        },
+        "AAL": {
+            "caption": "Selectable Dates/Times",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "selectable",
+            "rank": 2,
+            "value": "boolean"
+        },
+        "AAM": {
+            "caption": "Select Mirror",
+            "default_val": true,
+            "doc": "Whether to draw a “placeholder” event while the user is dragging.",
+            "editor": "DynamicValue",
+            "name": "selectmirror",
+            "rank": 3,
+            "value": "boolean"
+        },
+        "AAN": {
+            "caption": "Select Overlapping Times",
+            "default_val": true,
+            "doc": "Determines whether the user is allowed to select periods of time that are occupied by events.",
+            "editor": "DynamicValue",
+            "name": "selectoverlap",
+            "rank": 4,
+            "value": "boolean"
+        },
+        "AAO": {
+            "caption": " Constrain Time Selection",
+            "default_val": false,
+            "doc": "Limits user selection to certain windows of time.",
+            "editor": "DynamicValue",
+            "name": "selectconstraint",
+            "rank": 6,
+            "value": "boolean"
+        },
+        "AAP": {
+            "caption": "Constraint by Default Biz Hours",
+            "default_val": true,
+            "doc": "Emphasizes certain time slots on the calendar. By default, Monday-Friday, 9am-5pm.",
+            "editor": "Checkbox",
+            "name": "usedefaultbusinesshours",
+            "rank": 7,
+            "value": "boolean"
+        },
+        "AAQ": {
+            "caption": "---- Constraining Selectable Times",
+            "editor": "Label",
+            "name": "constraining_selectable_times",
+            "rank": 5
+        },
+        "AAR": {
+            "caption": "---- Custom Constraint Timeframe.",
+            "editor": "Label",
+            "name": "----_custom_constraint_hours",
+            "rank": 8
+        },
+        "AAS": {
+            "caption": "Days of week",
+            "doc": "ays of week. an array of zero-based day of week integers (0=Sunday)",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "customconstraintdaysofweek",
+            "rank": 10,
+            "value": "number"
+        },
+        "AAT": {
+            "caption": "Start Time",
+            "default_val": "10:00",
+            "doc": "'10:00', // a start time (10am in this example)",
+            "editor": "DynamicValue",
+            "name": "customconstraintstarttime",
+            "rank": 11,
+            "value": "text"
+        },
+        "AAU": {
+            "caption": "End Time",
+            "default_val": "17:00",
+            "doc": "'17:00', // an end time (5pm in this example)",
+            "editor": "DynamicValue",
+            "name": "customconstraintendtime",
+            "rank": 12,
+            "value": "text"
+        },
+        "AAX": {
+            "caption": "Selected Timeframe Type",
+            "editor": "custom_type",
+            "name": "selected_timeframe_type",
+            "rank": 13
+        },
+        "AAa": {
+            "caption": "If you want to have the nonselectable portions shaded, you'll need to set business hours to true. you can find that down further in the properties panel. ",
+            "editor": "Label",
+            "name": "if_you_want_to_have_the_nonselectable_portions_shaded,_you'll_need_to_set_business_hours_to_true",
+            "rank": 9
+        },
+        "AAc": {
+            "caption": "Select Minimum Distance",
+            "default_val": 0,
+            "doc": "The minimum distance the user’s mouse must travel after a mousedown, before a selection is allowed.",
+            "editor": "DynamicValue",
+            "name": "selectmindistance",
+            "rank": 1,
+            "value": "number"
+        },
+        "AAq": {
+            "caption": "🄴🅅🄴🄽🅃 🄳🄰🅃🄰",
+            "editor": "Label",
+            "name": "\t🄴🅅🄴🄽🅃_🄳🄰🅃🄰",
+            "rank": 14
+        },
+        "AAr": {
+            "caption": "Start Times",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "startTimes",
+            "optional": true,
+            "rank": 16,
+            "value": "text"
+        },
+        "AAs": {
+            "caption": "End Times",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "endTimes",
+            "optional": true,
+            "rank": 17,
+            "value": "text"
+        },
+        "AAt": {
+            "caption": "Titles",
+            "doc": "",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "eventTitles",
+            "optional": true,
+            "rank": 18,
+            "value": "text"
+        },
+        "AAu": {
+            "caption": "IDs",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "eventIDs",
+            "optional": true,
+            "rank": 19,
+            "value": "text"
+        },
+        "AAv": {
+            "caption": "Event Creation Instructions. In order to construct lists for events appropriately, you will use a :format as text operater on your list and separate each item with a double hash ## ",
+            "default_val": "Event Creation Instructions. In order to construct lists for events appropriately, you will use a :format as text operater on your list and separate each item with a double hash ## ",
+            "editor": "Label",
+            "name": "event_creation_instructions",
+            "rank": 15,
+            "value": "text"
+        },
+        "AAw": {
+            "caption": "Resource IDs",
+            "doc": "optional",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "resourceIDs",
+            "optional": true,
+            "rank": 20,
+            "value": "text"
+        },
+        "AAx": {
+            "caption": "Background Colors",
+            "doc": "optional. if left blank, global event color chosen during initialization will be used.  You can use any of the CSS color formats such #f00, #ff0000, rgb(255,0,0), or red.",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "backgroundColors",
+            "optional": true,
+            "rank": 21,
+            "value": "text"
+        }
+    },
+    "icon": "ion-android-checkbox-blank",
+    "property_applications": {
+        "MinWidth": true,
+        "resizable": true
+    },
+    "states": {
+        "AAY": {
+            "caption": "Selected Timeframe",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "selected_timeframe",
+            "value": "custom_data_AAX"
+        },
+        "AAh": {
+            "caption": "Current Calendar Date",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "current_calendar_date",
+            "value": "date"
+        }
+    }
+}

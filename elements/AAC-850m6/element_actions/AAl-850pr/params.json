@@ -1,0 +1,129 @@
+{
+    "caption": "Initialize",
+    "fields": {
+        "AAm": {
+            "caption": "Initial View",
+            "default_val": "dayGridMonth",
+            "editor": "Dropdown",
+            "name": "initial_view",
+            "optional": false,
+            "options": "timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth,multiMonthYear",
+            "rank": 0
+        },
+        "AAn": {
+            "caption": "Max Stacked Events",
+            "default_val": 100,
+            "doc": "For timeline view, the maximum number of events that stack top-to-bottom. For timeGrid view, the maximum number of events that stack left-to-right.   Can be an integer.",
+            "editor": "DynamicValue",
+            "name": "max_stacked_events",
+            "rank": 2,
+            "value": "number"
+        },
+        "AAo": {
+            "caption": "--- Event Popover ---",
+            "editor": "Label",
+            "name": "---_event_popover_---",
+            "rank": 1
+        },
+        "AAp": {
+            "caption": "Max Event Rows",
+            "doc": "In dayGrid view, the max number of stacked event levels within a given day. This includes the +more link if present. The rest will show up in a popover.  A value of false (the default) will display all events as-is.  A value of true will limit the number of events to the height of the day cell. View a live demo.  An integer value will limit the events to a specific number of rows.",
+            "editor": "DynamicValue",
+            "name": "max_event_rows",
+            "rank": 3,
+            "value": "_any_thing"
+        },
+        "AAy": {
+            "caption": "--- Event Appearance ---",
+            "editor": "Label",
+            "name": "---_event_appearance_---",
+            "rank": 4
+        },
+        "AAz": {
+            "caption": "Global Event BG Color",
+            "default_val": "rgba(58,153,240,1)",
+            "doc": "Sets the background color for all events on the calendar.",
+            "editor": "Color",
+            "name": "global_event_color",
+            "rank": 5,
+            "value": "text"
+        },
+        "ABB": {
+            "caption": "Event Border Color",
+            "default_val": "rgba(9,109,172,1)",
+            "editor": "Color",
+            "name": "event_border_color",
+            "rank": 6
+        },
+        "ABC": {
+            "caption": "Event Appearance",
+            "default_val": "auto",
+            "doc": "Controls which preset rendering style events use. Possible values:  'auto' (default) - When in daygrid, renders the event as a solid rectangle if it is all-day or multi-day. If a timed event, will render it with a dot. When in other views, will render normally. 'block' - When in daygrid, renders the event as a solid rectangle. When in other views, will render normally. 'list-item' - When in daygrid, renders the event with a dot. When in other views, will render normally. 'background' - See the background events article. 'inverse-background' - Like 'background', but fills the reverse space. See the background events article. 'none' - Won’t render the event at all.",
+            "editor": "DynamicValue",
+            "name": "eventdisplay",
+            "rank": 7,
+            "value": "text"
+        },
+        "ABD": {
+            "caption": "Display Event Time",
+            "default_val": true,
+            "doc": "Whether or not to display the text for an event’s date/time. This setting only applies to events that have times (allDay equal to false). If set to true, time text will always be displayed on the event. If set to false, time text will never be displayed on the event.  Events that are all-day will never display time text anyhow.  When this setting is not specified, the default that is computed is based off of the current view. For example, time text will be displayed in all DayGrid, and TimeGrid views by default. For timeline views, it depends on the duration.",
+            "editor": "DynamicValue",
+            "name": "displayeventtime",
+            "rank": 8,
+            "value": "boolean"
+        },
+        "ABE": {
+            "caption": "Light Event Font Color",
+            "default_val": "rgba(252,252,252,1)",
+            "editor": "Color",
+            "name": "lightTextColor",
+            "rank": 9
+        },
+        "ABF": {
+            "caption": "Dark Event Text Color",
+            "default_val": "rgba(0,0,0,1)",
+            "editor": "Color",
+            "name": "darkTextColor",
+            "rank": 10
+        },
+        "ABG": {
+            "caption": "--- Header Options ---",
+            "editor": "Label",
+            "name": "🄷🄴🄰🄳🄴🅁_🄾🄿🅃🄸🄾🄽🅂",
+            "rank": 11
+        },
+        "ABH": {
+            "caption": "Show Header",
+            "default_val": false,
+            "editor": "DynamicValue",
+            "name": "show_header",
+            "rank": 12,
+            "value": "boolean"
+        },
+        "ABI": {
+            "caption": "Left Header",
+            "default_val": "day,week,month",
+            "editor": "DynamicValue",
+            "name": "header_left",
+            "rank": 13,
+            "value": "text"
+        },
+        "ABJ": {
+            "caption": "Right Header",
+            "default_val": "today prev,next",
+            "editor": "DynamicValue",
+            "name": "header_right",
+            "rank": 15,
+            "value": "text"
+        },
+        "ABK": {
+            "caption": "Center Header",
+            "default_val": "title",
+            "editor": "DynamicValue",
+            "name": "header_center",
+            "rank": 14,
+            "value": "text"
+        }
+    }
+}

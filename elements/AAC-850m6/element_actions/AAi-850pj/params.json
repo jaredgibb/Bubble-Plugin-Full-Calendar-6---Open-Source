@@ -1,0 +1,16 @@
+{
+    "caption": "Change view to...",
+    "fields": {
+        "AAj": {
+            "caption": "view",
+            "default_val": "timeGridDay",
+            "doc": "timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth, multiMonthYear",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "view",
+            "options": "timeGridDay,timeGridWeek,timelineDay,timelineWeek,dayGridDay,dayGridWeek,dayGridMonth,listDay,listWeek,listMonth,listYear,resourceTimeGridDay,resourceTimeGridWeek,resourceDayGridMonth,resourceDayGridDay,resourceDayGridWeek,resourceTimelineDay,resourceTimelineWeek,resourceTimelineMonth",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}
