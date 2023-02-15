@@ -1,0 +1,13 @@
+{
+    "caption": "Change Timezone",
+    "fields": {
+        "ABP": {
+            "caption": "TimeZone Name",
+            "default_val": "America/Detroit",
+            "editor": "DynamicValue",
+            "name": "timezone",
+            "rank": 0,
+            "value": "text"
+        }
+    }
+}

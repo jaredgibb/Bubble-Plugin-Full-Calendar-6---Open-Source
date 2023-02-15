@@ -9,25 +9,21 @@ function(instance, properties, context) {
         //set calendar height
         instance.data.calendar.setOption('height', properties.bubble.height());
 
-        //header settings
-        const header = {
-            start: properties.header_left,
-            center: properties.header_center,
-            end: properties.header_right // will normally be on the right. if RTL, will be on the left
+        //get resources
+        
+        const resourceList = (properties.resourceList) ? properties.resourceList.get(0,properties.resourceList.length()) : []
+        const resources = resourceList.map(x=>{
+        	return {
+            	id: x,
+                title:x
+            }
+        })
+
+        if (resources.length > 0){
+         	resources.forEach(r=>{
+            	instance.data.calendar.addResource(r)
+            })    
         }
-        const headerObject = (properties.show_header) ? header : false
-        instance.data.calendar.setOption('headerToolbar', headerObject)
-
-        //title formatting
-        const titleFormatObject = {
-            month: 'long',
-            year: 'numeric',
-        }
-
-
-        instance.data.calendar.setOption('titleFormat', titleFormatObject)
-
-
         //Date Clicking & Selecting
 
         //set minimum distance a users mouse must travel before a seelction is made
@@ -68,10 +64,10 @@ function(instance, properties, context) {
 
 
         const events = []
-        const startList = properties.startTimes.split('##')
-        const endList = properties.endTimes.split('##')
-        const titleList = properties.eventTitles.split('##')
-        const IDList = properties.eventIDs.split('##')
+        const startList = (properties.startTimes)? properties.startTimes.split('##') : []
+        const endList = (properties.endTimes) ? properties.endTimes.split('##') : []
+        const titleList = (properties.endTimes)?properties.eventTitles.split('##'):[]
+        const IDList = (properties.IDList)?properties.eventIDs.split('##'):[]
         const resourceIDsList = (properties.resourceIDs) ? properties.resourceIDs.split('##') : []
         const backgroundColorsList = (properties.backgroundColors) ? properties.backgroundColors.split('##') : []
         //event array should be based on the length of the startTime list as this is the minimum requirement to get on the calendar
@@ -111,12 +107,10 @@ function(instance, properties, context) {
         });
 
         //add a new event source
-        instance.data.calendar.addEventSource(events)
-
-
-
-
-        //end of update function   
+        if (events.length > 0){
+                instance.data.calendar.addEventSource(events)
+        }
+  //end of update function   
     }
 
 

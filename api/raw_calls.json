@@ -9,6 +9,16 @@
             "ret_value": "api.1675477335599x243566499264200700.plugin_api.AAV",
             "should_reinitialize": true,
             "types": "{\"plugin_api.AAV\":{\"caption\":\"Selected Timeframe\",\"fields\":{\"_p_startTime\":{\"ret_value\":\"date\",\"caption\":\"startTime\",\"sample_value\":\"2018-09-01T12:30:00-05:00\",\"path\":[\"startTime\"]},\"_p_endTime\":{\"ret_value\":\"date\",\"caption\":\"endTime\",\"sample_value\":\"2018-09-01T12:30:00-05:00\",\"path\":[\"endTime\"]}}}}"
+        },
+        "ABR": {
+            "initialized": true,
+            "method": "get",
+            "name": "Event Info",
+            "publish_as": "data",
+            "rank": 1,
+            "ret_value": "api.1675477335599x243566499264200700.plugin_api.ABR",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABR\":{\"caption\":\"Event Info\",\"fields\":{\"_p_startTime\":{\"ret_value\":\"date\",\"caption\":\"startTime\",\"sample_value\":\"\",\"path\":[\"startTime\"]},\"_p_endTime\":{\"ret_value\":\"date\",\"caption\":\"endTime\",\"sample_value\":\"\",\"path\":[\"endTime\"]},\"_p_title\":{\"ret_value\":\"text\",\"caption\":\"title\",\"sample_value\":\"\",\"path\":[\"title\"]},\"_p_id\":{\"ret_value\":\"text\",\"caption\":\"id\",\"sample_value\":\"\",\"path\":[\"id\"]}}}}"
         }
     },
     "human": "FC6"

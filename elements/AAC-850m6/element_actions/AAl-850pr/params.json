@@ -124,6 +124,59 @@
             "name": "header_center",
             "rank": 14,
             "value": "text"
+        },
+        "ABW": {
+            "caption": "\t🄻🄾🄲🄰🄻🄴 🅂🄴🅃🅃🄸🄽🄶🅂",
+            "editor": "Label",
+            "name": "\t🄻🄾🄲🄰🄻🄴_🅂🄴🅃🅃🄸🄽🄶🅂",
+            "rank": 16
+        },
+        "ABX": {
+            "caption": "locale",
+            "default_val": "en",
+            "doc": "all options: en,af,ar-dz,ar-kw,ar-ly,ar-ma,ar-sa,ar-tn,ar,az,bg,bn,bs,ca,cs,cy,da,de-at,de,el,en-au,en-gb,en-nz,eo,es,et,eu,fa,fi,fr,fr-ch,gl,he,hi,hr,hu,hy-am,id,is,it,ja,ka,kk,km,ko,ku,lb,lt,lv,mk,ms,nb,ne,nl,nn,pl,pt-br,pt,ro,ru,si-lk,sk,sl,sm,sq,sr-cyrl,sr,sv,ta-in,th,tr,ug,uk,uz-cy,uz,vi,zh-cn,zh-tw",
+            "editor": "DynamicValue",
+            "name": "locale",
+            "options": "en,af,ar-dz,ar-kw,ar-ly,ar-ma,ar-sa,ar-tn,ar,az,bg,bn,bs,ca,cs,cy,da,de-at,de,el,en-au,en-gb,en-nz,eo,es,et,eu,fa,fi,fr,fr-ch,gl,he,hi,hr,hu,hy-am,id,is,it,ja,ka,kk,km,ko,ku,lb,lt,lv,mk,ms,nb,ne,nl,nn,pl,pt-br,pt,ro,ru,si-lk,sk,sl,sm,sq,sr-cyrl,sr,sv,ta-in,th,tr,ug,uk,uz-cy,uz,vi,zh-cn,zh-tw",
+            "rank": 17,
+            "value": "text"
+        },
+        "ABY": {
+            "caption": "direction",
+            "default_val": "ltr",
+            "doc": "The direction that elements in the calendar are rendered. Either left-to-right or right-to-left.",
+            "editor": "Dropdown",
+            "name": "direction",
+            "options": "rtl,ltr",
+            "rank": 18
+        },
+        "ABZ": {
+            "caption": "      🅅🄸🄴🅆 🅂🄿🄴🄲🄸🄵🄸🄲 🄾🄿🅃🄸🄾🄽🅂",
+            "editor": "Label",
+            "name": "🅅🄸🄴🅆_🅂🄿🄴🄲🄸🄵🄸🄲_🄾🄿🅃🄸🄾🄽🅂",
+            "rank": 19
+        },
+        "ABa": {
+            "caption": "viewsObject",
+            "default_val": "{     dayGridMonth: {       titleFormat: { year: 'numeric', month: '2-digit', day: '2-digit' }           }   }",
+            "doc": "if all else fails, leave this as: {}",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "viewsObject",
+            "rank": 22,
+            "value": "text"
+        },
+        "ABb": {
+            "caption": "You can specify options that apply only to specific calendar views. Provide separate options objects within the views option, keyed by the name of your view.",
+            "editor": "Label",
+            "name": "you_can_specify_options_that_apply_only_to_specific_calendar_views._provide_separate_options_objects_within_the_views_option,_keyed_by_the_name_of_your_view.",
+            "rank": 20
+        },
+        "ABc": {
+            "caption": "It is possible to customize an existing available view by tweaking settings.  If you’d like to take one of the existing view types, like dayGrid or timeGrid, but display it with a custom duration, like 4-days instead of the stock 1-week or 1-day like is shown in the default text.  We use the views option similar to how View-Specific Options work but with the very important addition of the type property. Also, a date-range parameter is required, whether it be duration, visibleRange, or dayCount.  We have chosen \"timeGridFourDay\" to be the name of our new custom view.  Also, in the above example, buttonText has been used to customize the header button’s text. ",
+            "editor": "Label",
+            "name": "it_is_possible_to_customize_an_existing_available_view_by_tweaking_settings.__if_you’d_like_to_take_one_of_the_existing_view_types,_like_daygrid_or_timegrid,_but_display_it_with_a_custom_duration,_like_4-days_instead_of_the_stock_1-week_or_1-day_like_is_shown_in_the_default_text.__we_use_the_views_option_similar_to_how_view-specific_options_work_but_with_the_very_important_addition_of_the_type_property._also,_a_date-range_parameter_is_required,_whether_it_be_duration,_visiblerange,_or_daycount.__we_have_chosen_\"timegridfourday\"_to_be_the_name_of_our_new_custom_view.__also,_in_the_above_example,_buttontext_has_been_used_to_customize_the_header_button’s_text._",
+            "rank": 21
         }
     }
 }

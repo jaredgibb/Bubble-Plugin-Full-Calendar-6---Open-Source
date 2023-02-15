@@ -20,6 +20,10 @@
         "AAk": {
             "caption": "a calendar is revealed",
             "name": "a_calendar_is_revealed"
+        },
+        "ABQ": {
+            "caption": "an event has been clicked",
+            "name": "an_event_has_been_clicked"
         }
     },
     "fields": {
@@ -203,6 +207,27 @@
             "optional": true,
             "rank": 21,
             "value": "text"
+        },
+        "ABS": {
+            "caption": "Clicked Event Type",
+            "editor": "custom_type",
+            "name": "event_data_type",
+            "rank": 22
+        },
+        "ABd": {
+            "caption": "      🅁🄴🅂🄾🅄🅁🄲🄴 🄳🄰🅃🄰",
+            "editor": "Label",
+            "name": "______🅁🄴🅂🄾🅄🅁🄲🄴_🄳🄰🅃🄰",
+            "rank": 23
+        },
+        "ABe": {
+            "caption": "Resource List",
+            "doc": "A list of resources",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "resourceList",
+            "rank": 24,
+            "value": "text"
         }
     },
     "icon": "ion-android-checkbox-blank",
@@ -226,6 +251,14 @@
             },
             "name": "current_calendar_date",
             "value": "date"
+        },
+        "ABT": {
+            "caption": "Clicked Event",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "clicked_event",
+            "value": "custom_data_ABS"
         }
     }
 }
